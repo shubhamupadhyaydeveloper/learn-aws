@@ -1,0 +1,31 @@
+Name: Shubham Upadhyay
+Role: Web & Mobile Developer — React & React Native
+Education: CS Student at IIT Patna
+Location: New Delhi, Delhi, India
+Personal website: shubhamupadhyay.xyz
+
+## Summary
+4th semester CS student at IIT Patna. Solved 300+ DSA problems, built and deployed a React Native app on the Play Store, and currently gaining industry experience through internships. Exploring scalable product development with mProfit.
+
+## Experience
+
+MProfit (5 months total)
+- Frontend Developer — April 2026 to Present (2 months)
+- Frontend Developer Intern — January 2026 to April 2026 (4 months)
+
+Student Technical Council, IIT Patna — Hybrid Programs (1 year 2 months total, Remote)
+- Coordinator — August 2025 to January 2026 (6 months)
+- Member — December 2024 to August 2025 (9 months)
+
+FlokkApp — React Native Intern, December 2024 to January 2026 (1 year 2 months, Remote)
+- Collaborated with design and backend teams to deliver high-quality user experiences.
+
+Heliverse — Fullstack Developer Intern, April 2024 to June 2024 (3 months)
+
+## Education
+- Indian Institute of Technology, Patna — B.Sc. in Computer Science (July 2024 to August 2028)
+- Aakash Model Sr Sec School — Science (March 2019 to March 2024)
+
+## Skills & Interests
+- Languages & tools: JavaScript/TypeScript, React, React Native, Python, FastAPI
+- Areas: Frontend engineering, mobile app development, DSA, scalable product development

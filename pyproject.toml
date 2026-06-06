@@ -1,0 +1,20 @@
+[project]
+name = "receipt-api"
+version = "0.1.0"
+description = "Receipt summarization API"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115.0",
+    "litellm>=1.50.0",
+    "python-dotenv>=1.0.1",
+    "pydantic>=2.9.0",
+    "mangum>=0.21.0",
+    "python-multipart>=0.0.28",
+]
+[dependency-groups]
+dev = [
+    "boto3>=1.43.14",
+    "uvicorn>=0.47.0",
+    "fastapi[standard]>=0.115.0",
+]

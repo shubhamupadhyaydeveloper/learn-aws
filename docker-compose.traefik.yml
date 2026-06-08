@@ -1,0 +1,32 @@
+name: traefik
+
+services:
+  traefik:
+    image: traefik:latest
+    command: 
+      - "--api=true"
+      - "--api.dashboard=true"
+      - "--log.level=DEBUG"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.traefik.address=:8080"
+      - "--entrypoints.web.address=:80"
+      - '--entrypoints.websecure.address=:443'
+      - "--entrypoints.web.http.redirections.entrypoint.to=websecure"
+      - "--entrypoints.web.http.redirections.entrypoint.scheme=https"
+      - "--certificatesresolvers.letsencrypt.acme.httpchallenge=true"
+      - "--certificatesresolvers.letsencrypt.acme.httpchallenge.entrypoint=web"
+      - "--certificatesresolvers.letsencrypt.acme.email=shubhamwork48@gmail.com"
+      - "--certificatesresolvers.letsencrypt.acme.storage=/letsencrypt/acme.json"
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - '/var/run/docker.sock:/var/run/docker.sock:ro'
+      - ./letsencrypt:/letsencrypt
+    networks:
+      - traefik-network
+
+networks:
+  traefik-network:
+    name: traefik-network

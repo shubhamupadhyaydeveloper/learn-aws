@@ -9,7 +9,6 @@ dependencies = [
     "litellm>=1.50.0",
     "python-dotenv>=1.0.1",
     "pydantic>=2.9.0",
-    "mangum>=0.21.0",
     "python-multipart>=0.0.28",
 ]
 [dependency-groups]

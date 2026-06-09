@@ -6,6 +6,8 @@ services:
       context: .
       dockerfile: Dockerfile
 
+    restart: always
+
     deploy:
       replicas: 2
 

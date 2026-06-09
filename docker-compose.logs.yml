@@ -5,6 +5,7 @@ services:
     image: amir20/dozzle:latest
     expose:
       - 8080
+    restart: always
     labels:
       - 'traefik.enable=true'
       - 'traefik.http.routers.logs-svc.rule=Host(`logs.shubhamlearningvps.online`)'

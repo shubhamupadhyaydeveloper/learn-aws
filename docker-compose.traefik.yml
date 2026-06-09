@@ -3,7 +3,8 @@ name: traefik
 services:
   traefik:
     image: traefik:latest
-    command: 
+    restart: always
+    command:
       - "--api=true"
       - "--api.dashboard=true"
       - "--log.level=DEBUG"

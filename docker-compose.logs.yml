@@ -1,0 +1,25 @@
+name: dozzle
+
+services:
+  dozzle:
+    image: amir20/dozzle:latest
+    expose:
+      - 8080
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.http.routers.logs-svc.rule=Host(`logs.shubhamlearningvps.online`)'
+      - 'traefik.http.services.logs-svc.loadbalancer.server.port=80'
+      - 'traefik.http.routers.logs-svc.entrypoints=websecure'
+      - 'traefik.docker.network=traefik-network'
+      - 'traefik.http.routers.logs-svc.tls=true'
+      - 'traefik.http.routers.logs-svc.tls.certresolver=cert-resolver'
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - traefik-network
+    
+
+networks:
+  traefik-network:
+    external: true
+      
